@@ -116,7 +116,8 @@ While the approach used in this project is effective in many scenarios, there ar
 * HAC (Hierarchical Agglomerative Clustering): Group users or items hierarchically to recommend based on similar clusters.
 ## Additional Information
 
-View the full project in the Jupyter Notebook
+View the full project in the Jupyter Notebook. 
+<br><br>
 Contact Chris Kucewicz at cfkucewicz@gmail.com with additional questions.
 
 ## Repository Structure
