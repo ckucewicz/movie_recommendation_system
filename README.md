@@ -23,7 +23,7 @@ This project used data from MovieLens’ database, specifically focusing on two 
 `movies.csv`: This dataset contains over 9,000 observations, with each row representing a unique movie identified by a movieId. Additional information about each movie includes its title (which includes the year of release in parentheses) and its associated genres (Action, Comedy, Drama, etc.)
 
 `ratings.csv`: This dataset provides detailed information on user ratings, with over 100,000 observations. Each row represents a single rating provided by a user for a specific movie. Key fields include userId (an identifier for the user), movieId (linking the rating to a movie in the `movies.csv` dataset), rating (0-5 stars with 0.5 increments), and timestamp (indicating when the rating was made).
-
+![Rating Frequency Bar Graph](visualizations/rating_frequency.png)
 ### Data Preparation
 The `movies` and `ratings` dataframes were well-structured, requiring minimal data preparation. There were no issues with null values, incorrect datatypes, or the need to rename features, so the data preparation phase was relatively short. The main steps involved merging the two datasets using an inner join, which helped facilitate a more comprehensive Exploratory Data Analysis (EDA) by combining relevant information from both. Additionally, the `timestamp` feature was removed from the merged dataset, as it does not contribute to the functionality of the recommender system or the EDA.
 Lastly, I dropped `timestamp` from `ratings` so `ratings` was prepared for use in the Surprise models. 
@@ -33,7 +33,7 @@ Key findings:
 * There is a ***weak, positive*** correlation (**0.1273**) between a movie’s number of ratings and overall rating, indicating that popular movies tend to receive slightly higher ratings.
 * The three most popular movies by number of reviews are *Forrest Gump*, *Shawshank Redemption*, and *Pulp Fiction*.
 * By average rating, the *Film-Noir* genre is the highest rated (**3.92**), while *Horror* movies are the lowest rated (**3.28**).
-
+![Ratings vs. Reviews](visualizations/ratingvsreviews.jpeg)
 ## Modeling
 The goal of the modeling phase was to train an effective model for a recommender system using the Surprise package, which is designed for building and implementing such systems.
 
