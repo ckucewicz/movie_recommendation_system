@@ -69,7 +69,7 @@ SVD outperformed KNNBasic, leading to its selection for hyperparameter tuning.
 * A common issue for recommender systems, including Kanopy’s, is the cold start problem, as the platform does not collect user ratings. This can be particularly challenging for collaborative filtering systems due to the lack of user information. In Section 6: Evaluation, I outline a method to address this challenge.
 ## Evaluation
 The final model, optimized through hyperparameter tuning, achieved the lowest RMSE score of **0.8559**, outperforming all baseline and advanced models. It demonstrated an improvement of approximately *0.0200* over the best baseline model (BaselineOnly, RMSE: **0.8785**), making it the preferred model for the recommender system.
-
+![Table with Model RMSE Scores](visualizations/models_rmse_image.png)
 While CF models, particularly SVD, excel at identifying patterns in sparse datasets and effectively scale with larger user bases, they face challenges with the cold start problem. This problem stems from their reliance on existing user data to generate recommendations, making it difficult to provide accurate predictions for new users or items. Therefore, while I expect this optimized SVD model to perform well as Kanopy’s ratings database expands, its effectiveness may be limited during the early stages of database development.
 
 To address this cold start issue, I designed recommendation functions that incorporate strategies to generate meaningful suggestions for new users. These solutions are elaborated on in the following sections.
