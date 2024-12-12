@@ -123,9 +123,21 @@ Contact Chris Kucewicz at cfkucewicz@gmail.com with additional questions.
 
 ## Repository Structure
 my-repo/
+
+
 ├── saved_models/         # Folder for model files (e.g., grid_search_SVD.pkl)
+
+
 ├── visualizations/       # Folder for visualization files (e.g., .png, .jpeg)
+
+
 ├── .gitignore            # To ignore files like data or .ipynb checkpoints
+
+
 ├── README.md             # Project description and info
+
+
 ├── notebook.ipynb        # Jupyter notebook
+
+
 └── presentation.pdf      # Slideshow PDF file
